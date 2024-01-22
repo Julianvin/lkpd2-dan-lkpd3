@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        // no.1
+      let nama = prompt("please enter your name:");
+      let gajiinput = prompt("Gaji:");
+      let gaji = parseInt(gajiinput, 10)
+      let tunj = 0.2 * gaji;
+      let pajak = 0.15 * gaji + tunj;
+      let gajibersih = gaji + tunj - pajak;
+      console.log(nama, tunj, pajak, gajibersih);
+    </script>
+  </body>
+</html>

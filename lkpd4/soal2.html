@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="anjay">q</h1>
+
+    <script>
+      const html = getElementById("anjay").innerHTML = newHour +newMinute +newSecond;
+      const now = new Date();
+
+      const hour = now.getHours();
+      const minute = now.getMinutes();
+      const second = now.getSeconds();
+
+      const newTime = new Date(now.getTime() + 2000);
+
+      const newHour = newTime.getHours();
+      const newMinute = newTime.getMinutes();
+      const newSecond = newTime.getSeconds();
+
+      console.log(html);
+    </script>
+  </body>
+</html>

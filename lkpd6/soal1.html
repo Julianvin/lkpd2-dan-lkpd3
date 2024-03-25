@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // nilai anak murid
+        let nama = prompt("Masukan Nama anda=")
+        let mtk = parseInt(prompt("Masukan nilai MTK anda="),10)
+        let indo = parseInt(prompt("Masukan nilai INDO anda="),10)
+        let ingg = parseInt(prompt("Masukan nilai INGGRIS anda="),10)
+        let dpk = parseInt(prompt("Masukan nilai DPK anda="),10)
+        let agm = parseInt(prompt("Masukan nilai AGAMA anda="),10)
+
+        // rata rata dan kehadiran
+        let rata = mtk + indo + ingg + dpk + agm
+        let kehadiran= parseInt(prompt("Berapa persen kehadiran anda? (hanya angka)"),10)
+
+        if(rata >= 475 && kehadiran == 100){
+            console.log(nama,'Selamat anda Juara Kelas!',"dikarenakan nilai anda "+rata, "kehadiran anda"+kehadiran+"%")
+        }else{
+            console.log("Tidak Juara Kelas :(")
+        }
+    </script>
+</body>
+</html>
